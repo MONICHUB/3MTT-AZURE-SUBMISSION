@@ -100,4 +100,22 @@ Beyond baseline MFA activation, the environment is hardened through two structur
 * **Role-Based Access Control (RBAC):** Implemented via the **Access Control (IAM)** blade embedded within resources and resource groups. Permissions are governed strictly by the **Principle of Least Privilege (PoLP)**, ensuring that identities are provisioned with only the absolute minimum required permissions necessary to complete their functions, rather than default global admin permissions.
 * **Tenant Password Policies:** Managed through the authentication methods and user settings within Entra ID. The environment enforces strong complex structures (requiring alphanumeric combinations, special characters, and minimum character counts) while structurally logging all sign-in behaviors via the Audit Logs stream for continuous security visibility.
 
+Billing Alerts & Cost Management Architectures
+
+Deploying enterprise infrastructure inside a public cloud framework demands strict financial governance. Under the consumption-based pricing model of cloud computing, unmonitored resources can scale dynamically, leading to unexpected fiscal overhead or complete credit depletion.
+
+### Automated Budget & Consumption Guardrails
+To prevent accidental over-expenditure and ensure continuous compliance with the Azure Free Tier boundaries, an active automated financial control budget has been established within the **Cost Management + Billing** workspace:
+
+1. **Budget Threshold Definition:** An operational baseline budget profile (`project101_budget`) has been instantiated to monitor real-time monthly cumulative expenditures.
+2. **Dynamic Alert Conditions:** Automated notification parameters trigger when consumption vectors cross or project toward critical percentage thresholds of the assigned budget.
+3. **Notification Routing Protocols:** The budget subsystem bridges directly with automated communications, routing event flags to the administrator's structural email endpoint (`ogbojimonic@gmail.com`) to allow for rapid optimization, manual scaling holds, or asset evaluation prior to generating overages.
+
+![Cost Management )
+
+
+
+
+
+
 
