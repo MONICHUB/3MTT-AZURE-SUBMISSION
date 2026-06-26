@@ -78,3 +78,26 @@ To manipulate resources effectively within an enterprise cloud infrastructure, a
 To optimize monitoring workflows and demonstrate configuration capabilities, a personalized monitoring dashboard layout was instantiated within the root directory portal directory. By entering portal modification mode, the default landing profile was re-architected to display customized layout elements, real-time platform metrics, and critical service health matrices.
 
 ![Customized Azure Portal Dashboard Architecture](custom_dashboard.png)
+
+
+# 4. Identity, Governance, and Security Configurations
+
+Cloud security is managed under the **Shared Responsibility Model**. While Microsoft assumes structural responsibility for securing physical data centers, host hypervisors, and core networking layers, the tenant administrator retains absolute responsibility for securing data assets, operational endpoints, and user identities.
+
+### Multi-Factor Authentication (MFA) Implementation Guide
+To mitigate identity compromises and protect root administrative privileges from credential theft, Multi-Factor Authentication must be enforced across the tenant using Microsoft Entra ID Security Defaults:
+
+1. Navigate to the global search bar at the top of the portal, search for **Microsoft Entra ID**, and click on the service directory.
+2. In the upper horizontal menu navigation pane, select the **Properties** tab.
+3. Scroll down to the **Security defaults** sub-section.
+4. Verify or select the **Manage security defaults** hyperlink interface to ensure security configurations are active. This status structurally enforces modern MFA challenges across all users and administrative accounts within the cloud directory tenant to protect against credential threats.
+
+![Microsoft Entra ID Governance and MFA Security Configuration](mfa_security_defaults.png)
+
+### Governance Frameworks & Password Policies
+Beyond baseline MFA activation, the environment is hardened through two structural administrative layers:
+
+* **Role-Based Access Control (RBAC):** Implemented via the **Access Control (IAM)** blade embedded within resources and resource groups. Permissions are governed strictly by the **Principle of Least Privilege (PoLP)**, ensuring that identities are provisioned with only the absolute minimum required permissions necessary to complete their functions, rather than default global admin permissions.
+* **Tenant Password Policies:** Managed through the authentication methods and user settings within Entra ID. The environment enforces strong complex structures (requiring alphanumeric combinations, special characters, and minimum character counts) while structurally logging all sign-in behaviors via the Audit Logs stream for continuous security visibility.
+
+
