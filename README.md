@@ -61,3 +61,20 @@ To remain within the strict free boundaries and avoid premature credit exhaustio
 | **Windows Virtual Machines** | 750 Hours / Month | Must utilize `B1s` burstable compute shapes |
 | **Azure Blob Storage** | 5 GB of LRS Storage | Capped at 20,000 Read & 10,000 Write operations |
 | **Azure SQL Database** | 250 GB storage capacity | Strictly limited to standard `S0` database 
+
+
+
+# 3. Azure Portal Navigation & Dashboard Customization
+
+To manipulate resources effectively within an enterprise cloud infrastructure, administrators must master the primary structural control planes of the Azure Management Portal.
+
+### Core Interface Mechanics
+
+* **Global Search Bar:** Located at the top center of the user interface. This is the primary command tool used to rapidly locate services, specific resource names, documentation, or active deployment tenants without digging through multi-nested menus.
+* **Portal Sidebar Menu:** Accessible via the hamburger navigation icon on the top-left corner. It pins essential service shortcut locations—such as *All Resources*, *Resource Groups*, *App Services*, and *Virtual Machines*—for swift horizontal navigation.
+* **Azure Marketplace Gateway:** Found via the main menu or global search. It acts as an integrated catalog enabling deployment of pre-configured third-party or native solutions directly into the tenant scope.
+
+### Custom Dashboard Implementation
+To optimize monitoring workflows and demonstrate configuration capabilities, a personalized monitoring dashboard layout was instantiated within the root directory portal directory. By entering portal modification mode, the default landing profile was re-architected to display customized layout elements, real-time platform metrics, and critical service health matrices.
+
+![Customized Azure Portal Dashboard Architecture](custom_dashboard.png)
