@@ -31,18 +31,6 @@ To verify that the account was correctly created and that the subscription is st
 
 ![Active Azure Subscription](azure subscription 1.png)
 
-
-1 of 204
-(no subject)
-Inbox
-
-ogboji monica <ogbojimonic@gmail.com>
-4:22 PM (0 minutes ago)
-to me
-
-
-
-
 # 2. Azure Free Tier Limits & Benefits Summary
 
 To maintain effective cost control and maximize efficiency, this deployment utilizes the structured guidelines of the Azure Free Tier. The subscription is bound by the following baseline parameters:
@@ -61,8 +49,6 @@ To remain within the strict free boundaries and avoid premature credit exhaustio
 | **Windows Virtual Machines** | 750 Hours / Month | Must utilize `B1s` burstable compute shapes |
 | **Azure Blob Storage** | 5 GB of LRS Storage | Capped at 20,000 Read & 10,000 Write operations |
 | **Azure SQL Database** | 250 GB storage capacity | Strictly limited to standard `S0` database 
-
-
 
 # 3. Azure Portal Navigation & Dashboard Customization
 
@@ -111,7 +97,7 @@ To prevent accidental over-expenditure and ensure continuous compliance with the
 2. **Dynamic Alert Conditions:** Automated notification parameters trigger when consumption vectors cross or project toward critical percentage thresholds of the assigned budget.
 3. **Notification Routing Protocols:** The budget subsystem bridges directly with automated communications, routing event flags to the administrator's structural email endpoint (`ogbojimonic@gmail.com`) to allow for rapid optimization, manual scaling holds, or asset evaluation prior to generating overages.
 
-![Cost Management )
+![COST MANAGEMENT EVIDENCE )
 
 
 
